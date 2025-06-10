@@ -64,29 +64,41 @@ a {
   margin-inline: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .header {
   background-color: var(--color-gray-light);
-  min-height: 700px;
-  padding-top: 80px;
+  padding-top: 69px;
   padding-bottom: 141px;
-}
-.container {
 }
 
 .navbar {
-  margin-bottom: 162px;
+  margin-bottom: 141px;
 }
 
 .navbar__list {
   display: flex;
-  gap: 45px;
-}
-
-.navbar__item {
+  gap: 27px;
+  margin-left: -0.75em;
 }
 
 .navbar__link {
   letter-spacing: var(--letter-spacing);
+  padding: 0.5e, 0.75em;
+  text-transform: uppercase;
+  display: block;
 }
 
 .navbar__link--active {
@@ -102,11 +114,12 @@ a {
 }
 
 .hero__title {
-  margin-bottom: 60px;
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 
 .hero__description {
-  margin-bottom: 65px;
+  margin-bottom: 57px;
   color: var(--color-secondary);
 }
 
@@ -120,4 +133,93 @@ a {
   padding: 0.5em;
   background-color: var(--color-primary);
   color: var(--color-white);
+}
+
+.main {
+}
+
+.about {
+  background-color: var(--color-white);
+}
+
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.container-sm {
+}
+
+.about__title {
+}
+
+.section__title {
+  margin-bottom: 36px;
+}
+
+.about__description {
+}
+
+.section_description {
+  color: var(--color-secondary);
+}
+
+.expirience {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.expirience__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+
+.expirience__item {
+  display: flex;
+  gap: var(--gap);
+}
+
+.expirience__item-picture {
+  order: -1;
+}
+
+.expirience__item-number {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.epirience__item-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 1;
+}
+
+.epirience__item-label {
+}
+
+.expirience__item-image {
+  display: block;
+}
+
+.process {
+  background-color: var(--color-gray-light);
+}
+
+.process__title {
+}
+
+.process__description {
+}
+
+.section__description {
+}
+
+.video {
+  background-color: var(--color-gray-light);
 }
