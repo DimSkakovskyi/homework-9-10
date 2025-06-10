@@ -97,7 +97,7 @@ a {
 
 .navbar__link {
   letter-spacing: var(--letter-spacing);
-  padding: 0.5e, 0.75em;
+  padding: 0.5em 0.75em;
   text-transform: uppercase;
   display: block;
 }
