@@ -228,3 +228,37 @@ a {
 .footer__description {
   font-size: 0.8rem;
 }
+
+@media (max-width: 1200px) {
+  .container {
+    width: calc(100% - var(--gap-xl)*3);
+  }
+
+  .expirience__container {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 2.7rem;
+  }
+  
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  .expirience__container {
+    gap: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+  }
+}
