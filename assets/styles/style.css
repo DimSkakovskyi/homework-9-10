@@ -64,6 +64,10 @@ a {
   margin-inline: auto;
 }
 
+.makeflex {
+  display: block;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -105,6 +109,17 @@ a {
 .navbar__link--active {
   color: var(--color-primary);
   font-weight: 500;
+}
+
+.burger-menu {
+  display: none;
+}
+
+.burger-menu__img {
+  width: 45px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
 }
 
 .hero {
@@ -248,8 +263,8 @@ a {
     font-size: 1.7rem;
   }
 
-  .expirience__container {
-    gap: 150px;
+  .expirience__item {
+    width: 25%;
   }
 }
 
@@ -260,5 +275,53 @@ a {
   
   h2 {
     font-size: 1.4rem;
+  }
+
+  .expirience__item {
+    width: 30%;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  .header {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+  
+  .navbar__list {
+    display: none;
+  }
+
+  .navbar {
+    margin: 0;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .hero {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  
+  .expirience__container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .expirience__item {
+    flex-direction: column;
+  }
+
+  .makeflex {
+    display: flex;
+    justify-content: center;
   }
 }
