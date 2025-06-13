@@ -116,7 +116,7 @@ a {
 }
 
 .burger-menu__img {
-  width: 45px;
+  width: 35px;
   position: absolute;
   top: 25px;
   right: 25px;
@@ -306,6 +306,10 @@ a {
 
   .hero {
     margin-top: 30px;
+  }
+
+  .hero__button {
+    margin: 0 auto;
   }
 }
 
